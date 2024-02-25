@@ -12,7 +12,7 @@ stages:
   jobs:
   - job: build_test
     pool:
-      vmImage: 'Ubuntu 16.04'
+      vmImage: 'ubuntu-latest'
     steps:
     - script: echo Build!
 
@@ -21,7 +21,7 @@ stages:
   jobs:
   - job: deploy_to_east
     pool:
-      vmImage: 'Ubuntu 16.04'
+      vmImage: 'ubuntu-latest'
     steps:
     - script: echo Deploying East!
 
@@ -30,7 +30,7 @@ stages:
   jobs:
   - job: deploy_to_west
     pool:
-      vmImage: 'Ubuntu 16.04'
+      vmImage: 'ubuntu-latest'
     steps:
     - script: echo Deploying West!
     
@@ -41,6 +41,6 @@ stages:
   jobs:
   - job: verify
     pool:
-      vmImage: 'Ubuntu 16.04'
+      vmImage: 'ubuntu-latest'
     steps:
     - script: echo Verifying deploys!
